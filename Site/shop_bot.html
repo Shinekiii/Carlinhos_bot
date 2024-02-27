@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOJA</title>
+</head>
+
+<body>
+  <link rel="stylesheet" href="styleshop.css">
+
+  <header>
+    <div class="container"></div>
+    <div class="menu">
+      <nav>
+
+        <a class="home" href="index.html">Home</a>
+        <a class="shop" href="shop_bot.html">Shop</a>
+        <a class="commands" href="help_bot.html">Commands</a>
+        <a class="contact" href="contact_bot.html">Contact</a>
+
+      </nav>
+    </div>
+
+
+    </div>
+
+    <h1 class="header">Loja do Carlinhos_bot</h1>
+
+  </header>
+
+  <section>
+
+    <div id="enunciado">
+      <div>
+        <h1 class="verde">RESGATES</h1>
+        <br>
+        <br>
+      </div>
+      <h1 class="popup">COMO COMPRAR </h1>
+      <BR></BR>
+      <h4>para comprar este produto você deve copiar o seguinte id (id), em seguida você deverá ir até um canal que
+        possua o Carlinhos_Bot e digitar o seguinte comando: !comprar <span style="color: #00ff84;"> &lt; email que você
+          recebrá > &lt id do produto></span> .</h4>
+      <BR></BR>
+      <h3 class="lembrete">NÃO ESQUEÇA DE SUBISTITUIR AS INFORMAÇÕES DENTRO DO MAIOR E MENOR POR AS INFORMAÇÕES REAIS
+      </h3>
+
+      <div>
+        <ul>
+          <div class="random">Random Key</div>
+          <div class="imagem"><img src="dado maiorzinho.png" alt="random"></div>
+          <button class="comprar">comprar</button>
+          <ul class="cover">Tenkaichi 3 mod
+            <div class="imagem"><img src="dragon ball.png"
+                alt="random"></div>
+            <button class="comprarc">comprar</button>
+          </ul>
+          <ul class="disc">Modelo Discord
+            <div class="imagem"><img src="discord-2-128.png" alt="random"></div>
+            <button class="comprard">comprar</button>
+          </ul>
+        </ul>
+      </div>
+
+      <script>
+        // Captura todos os elementos com a classe 'comprarc' e 'comprard' e adiciona um ouvinte de evento de clique a eles
+        var comprarc = document.querySelector('.comprarc');
+        var comprard = document.querySelector('.comprard');
+        var comprare = document.querySelector('.comprar');
+
+        var numerosDisponiveis = Array.from({ length: 15 }, (_, index) => 201 + index);
+        var comprare = document.querySelector('.comprar');
+
+        comprare.onclick = function () {
+          window.alert("JOGOS RANDOMIZADOS SÃO ALEATÓRIOS E PODEM SER SELECIONADOS JOGOS +18!!!!")
+          window.alert("Preço = 5000 pontos")
+          if (numerosDisponiveis.length > 0) {
+            // Randomiza um índice válido
+            var indiceAleatorio = Math.floor(Math.random() * numerosDisponiveis.length);
+
+            // Obtém e exibe o número selecionado
+            var numeroSelecionado = numerosDisponiveis[indiceAleatorio];
+            window.alert("Seu ID é " + numeroSelecionado);
+
+            // Remove o número selecionado da lista
+            numerosDisponiveis.splice(indiceAleatorio, 1);
+          } else {
+            window.alert("Todos os números foram selecionados");
+          }
+        }
+
+        comprarc.onclick = function () {
+
+          if (true) {
+            window.alert("Preço = 500 pontos")
+            window.alert("your id is 301")
+          }
+        }
+        comprard.onclick = function () {
+          if (true) {
+            window.alert("Preço = 500 pontos")
+            window.alert("your id is 302")
+          }
+        }
+
+      </script>
+
+</body>
+
+</html

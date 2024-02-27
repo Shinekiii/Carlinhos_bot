@@ -1,0 +1,15 @@
+{
+  "channel": "TODDYYZ",
+  "channel2": "Shin3kiii",
+  "channel3": "carlinhos_bot",
+  "username": "Carlinhos_Bot",
+  "password": "oauth:1vfhw40qun81d2tbc5ed1rjytpkw28",
+  "emailConfig": {
+    "service": "gmail",
+    "auth": {
+      "user": "btwitch011@gmail.com",
+      "pass": "rkev cbis ojdd czas"
+    }
+  },
+  "openaiApiKey": "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"
+}

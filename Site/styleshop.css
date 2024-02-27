@@ -1,0 +1,273 @@
+body {
+  background-image: radial-gradient(#1C2540, #1B1D22);
+
+  font: normal, 15pt, arial;
+  color: aliceblue;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+h1 {
+  text-align: center;
+
+}
+
+.container {
+  max-width: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.home {
+  color: #00ff84;
+  font-size: 15pt;
+  margin: 100px;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.home:hover {
+
+  color: #01ad5a;
+}
+
+.shop:hover {
+
+  color: #01ad5a;
+}
+
+.commands:hover {
+
+  color: #01ad5a;
+}
+
+.contact:hover {
+
+  color: #01ad5a;
+}
+
+
+.shop {
+  color: #00ff84;
+  font-size: 15pt;
+  margin: 100px;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.commands {
+  color: #00ff84;
+  font-size: 15pt;
+  margin: 100px;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact {
+  color: #00ff84;
+  font-size: 15pt;
+  text-align: center;
+  margin: 100px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+li {
+
+  font-size: larger;
+  background-color: #2f3445;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  height: 200px;
+  width: 227px;
+  text-align: center;
+}
+
+ul {
+  font-size: larger;
+  background-color: #2f3445;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  height: 225px;
+  width: 246px;
+  text-align: center;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+.imagem {
+
+  margin: 30px;
+}
+
+.comprar {
+  background-color: #2f3445;
+  text-align: center;
+  width: 160px;
+  height: 32px;
+}
+
+button {
+  color: white;
+  margin-bottom: 16px;
+  position: absolute;
+  top: 750px;
+  left: 214px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 23px;
+
+  outline: none;
+  border: none;
+}
+
+.comprarc {
+  background-color: #2f3445;
+  width: 160px;
+  margin-left: 335px;
+  margin-top: 0px;
+  text-align: center;
+  height: 32px;
+}
+
+.comprarc:hover {
+  background-color: #01ad5a;
+  border-radius: 7px;
+}
+
+.comprard:hover {
+  background-color: #01ad5a;
+  border-radius: 7px;
+}
+
+.comprar:hover {
+  background-color: #01ad5a;
+  border-radius: 7px;
+}
+
+.cover {
+  font-size: larger;
+  background-color: #2f3445;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  height: 225px;
+  width: 246px;
+  text-align: center;
+  padding: 20px;
+  margin-left: 315px;
+  margin-top: -228px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.disc {
+  font-size: larger;
+  background-color: #2f3445;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  height: 225px;
+  width: 246px;
+  text-align: center;
+  padding: 20px;
+  margin-left: 653px;
+  margin-top: -266px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.comprard {
+  background-color: #2f3445;
+  width: 160px;
+  margin-left: 678px;
+  margin-top: 0px;
+  text-align: center;
+  height: 32px;
+}
+
+#enunciado {
+
+
+  border-radius: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.verde {
+
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #01ad5a;
+  width: 300px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.lembrete {
+  color: #00ff84;
+}
+
+.texto {
+
+  color: aliceblue;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.popup {
+  text-align: center;
+}
+
+header {
+  color: aliceblue;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+
+}
+
+section {
+  background-color: #2d3241;
+  border-radius: 15px;
+  padding: 15px;
+  width: 1000px;
+  margin: auto;
+  box-shadow: 3px 3px 10px hsla(0, 0%, 0%, 0.363);
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+footer {
+  color: aliceblue;
+  text-align: center;
+  font-style: italic;
+}
+
+::-webkit-scrollbar {
+
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+
+  width: 10px;
+  background-color: #00ff84;
+
+}
+
+.menu {
+
+  background-color: #2d3241;
+  border-radius: 10px;
+  padding: 15px;
+  height: 26px;
+  margin: auto;
+  box-shadow: 3px 3px 10px hsla(0, 0%, 0%, 0.363);
+  color: #00ff84;
+  font-family: 'Josefin Sans', sans-serif;
+
+}

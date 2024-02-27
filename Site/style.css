@@ -1,0 +1,166 @@
+body {
+  background-image: radial-gradient(#1C2540, #1B1D22);
+
+  font: normal, 15pt, arial;
+  color: aliceblue;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+h1 {
+  text-align: center;
+
+}
+
+.container {
+  max-width: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.home {
+  color:#00ff84;
+  font-size: 15pt;
+  margin: 100px;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.home:hover {
+
+  color:#01ad5a;
+}
+
+.shop:hover {
+
+  color:#01ad5a;
+}
+
+.commands:hover {
+
+  color:#01ad5a;
+}
+
+.contact:hover {
+
+  color:#01ad5a;
+}
+
+
+.shop {
+  color:#00ff84;
+  font-size: 15pt;
+  margin: 100px;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.commands {
+  color:#00ff84;
+  font-size: 15pt;
+  margin: 100px;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact {
+  color:#00ff84;
+  font-size: 15pt;
+  text-align: center;
+  margin: 100px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+li {
+
+  font-size: larger;
+  color: #00ff84;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+
+}
+
+#jogos {
+
+
+  border-radius: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.verde {
+
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #01ad5a;
+  width: 300px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  margin: auto;
+
+
+
+
+}
+
+
+
+.texto {
+
+  color: aliceblue;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+header {
+  color: aliceblue;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+
+}
+
+section {
+  background-color: #2d3241;
+  border-radius: 10px;
+  padding: 15px;
+  width: 1000px;
+  margin: auto;
+  box-shadow: 3px 3px 10px hsla(0, 0%, 0%, 0.363);
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+footer {
+  color: aliceblue;
+  text-align: center;
+  font-style: italic;
+}
+
+::-webkit-scrollbar {
+
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+
+  width: 10px;
+  background-color: #00ff84;
+
+}
+
+.menu {
+
+  background-color: #2d3241;
+  border-radius: 10px;
+  padding: 15px;
+  height: 26px;
+  margin: auto;
+  box-shadow: 3px 3px 10px hsla(0, 0%, 0%, 0.363);
+  color: #00ff84;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
