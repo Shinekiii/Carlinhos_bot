@@ -482,7 +482,7 @@ client.on('message', (channel, user, message, self) => {
   //Help
 
   if (message == '!help') {
-    client.say(channel, `@${user.username}, https://carlinhos-bot.netlify.app/help_bot `);
+    client.say(channel, `@${user.username}, https://carlinhosbot.netlify.app/help_bot `);
   }
 
   //cavalos
@@ -861,7 +861,7 @@ client.on('message', (channel, tags, message, self) => {
   }
 
   // Comando para o cassino
-  if (message.toLowerCase().startsWith('!cassino')) {
+  if (message.toLowerCase().startsWith('!tigrinho')) {
     const username = tags.username;
     const betAmount = parseInt(message.split(' ')[1]);
 
@@ -884,7 +884,7 @@ client.on('message', (channel, tags, message, self) => {
                 console.error(err.message);
               }
             });
-            client.say(channel, `@${username} ganhou ${winnings} pontos no cassino!`);
+            client.say(channel, `@${username} passou a perna e ganhou ${winnings} pontos no tigrinho!`);
           } else {
             // Usuário perde
             const newPoints = currentPoints - betAmount;
@@ -893,7 +893,7 @@ client.on('message', (channel, tags, message, self) => {
                 console.error(err.message);
               }
             });
-            client.say(channel, `@${username} perdeu ${betAmount} pontos no cassino!`);
+            client.say(channel, `@${username} foi roubado pelo tigrinho e perdeu ${betAmount} pontos `);
           }
         } else {
           client.say(channel, `@${username}, você não tem pontos suficientes para apostar essa quantia!`);
@@ -901,7 +901,7 @@ client.on('message', (channel, tags, message, self) => {
       } else {
         // Usuário não existe na tabela, então vamos inserir uma nova entrada para ele
         if (betAmount > 0) {
-          client.say(channel, `@${username}, você precisa de pontos para jogar no cassino!`);
+          client.say(channel, `@${username}, você precisa de pontos para jogar no tigrinho, ou tá achando que a vida é um morango!`);
         }
       }
     });

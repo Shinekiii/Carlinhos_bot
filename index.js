@@ -5,7 +5,7 @@ const sqlite3 = require('sqlite3').verbose();
 const { channel, channel2, channel3, username, password, emailConfig } = require('./settings.json');
 
 // Conexão com o banco de dados para os pontos
-const db = new sqlite3.Database('C:\\Users\\rache\\OneDrive\\Área de Trabalho\\Bot_twitch\\points.db', (err) => {
+const db = new sqlite3.Database('C:/vs/cb/points.db', (err) => {
   if (err) {
     console.error(err.message);
   }
@@ -13,7 +13,7 @@ const db = new sqlite3.Database('C:\\Users\\rache\\OneDrive\\Área de Trabalho\\
 });
 
 // Conexão com o banco de dados para os comandos personalizados
-const dbCommands = new sqlite3.Database('comandos_chat.db', (err) => {
+const dbCommands = new sqlite3.Database('C:/vs/cb/comandos_chat.db', (err) => {
   if (err) {
     console.error(err.message);
   }
@@ -52,6 +52,35 @@ const options = {
 
 const client = new tmi.Client(options);
 client.connect().catch(console.error);
+
+////////////////////////////////////////////////INDICA/////////////////////////////////////////////////////////
+
+client.on('message', (channel, tags, message, self) => {
+  // Verifica se a mensagem foi enviada por um moderador ou pelo streamer
+  if (tags.mod || tags['user-id'] === tags['room-id']) {
+    // Verifica se a mensagem começa com "!indica"
+    if (message.toLowerCase().startsWith('!indica')) {
+      // Extrai o nome do canal da mensagem
+      const channelName = message.split(' ')[1];
+      
+      // Verifica se o nome do canal foi fornecido
+      if (channelName) {
+        // Constrói o link do canal
+        const channelLink = `www.twitch.tv/${channelName}`;
+        
+        // Envia a mensagem com o link do canal
+        client.say(channel, `Confira o canal indicado: ${channelLink}`);
+      } else {
+        // Se o nome do canal não foi fornecido, avisa o usuário
+        client.say(channel, 'Por favor, forneça o nome do canal após o comando !indica.');
+      }
+    }
+  }
+});
+
+
+/////////////////////////////////////////////////E-MAIL/////////////////////////////////////////////////////////
+
 
 // Configuração do transporte para envio de e-mail
 const transporter = nodemailer.createTransport(emailConfig);
@@ -153,6 +182,12 @@ client.on('message', (channel, user, message, self) => {
 
   if (message == '!lurk') {
     client.say(channel, `Quem quiser dar aquela ajuda , sempre deixando no lurkzin , deixando a live aberta sempre que começar , Hoje existe um app que faz isso automaticamente. (Isso ajuda em 100% o crescimento do streamer) https://chrome.google.com/webstore/detail/twitch-lurker/fkjghajhfjamfjcmdkbangbeogbagnjf`)
+  }
+
+  //loja
+
+  if (message == '!loja') {
+    client.say(channel, `${user.username} aqui está o link para a loja: https://carlinhosbot.netlify.app/shop_bot caso alguma duvido com os comandos do bot entre em: https://carlinhosbot.netlify.app/help_bot `)
   }
 
 
@@ -482,7 +517,7 @@ client.on('message', (channel, user, message, self) => {
   //Help
 
   if (message == '!help') {
-    client.say(channel, `@${user.username}, https://carlinhos-bot.netlify.app/help_bot `);
+    client.say(channel, `@${user.username}, https://carlinhosbot.netlify.app/help_bot `);
   }
 
   //cavalos
